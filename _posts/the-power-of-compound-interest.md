@@ -10,9 +10,9 @@ ogImage:
   url: '/assets/blog/the-power-of-compound-interest/cover.png'
 ---
 
-💎 I kept my promise to double your funds in less than a month.
+💎 **I kept my promise to double your funds in less than a month.**
 
-💎 Please join me in the new game called the "Power of Compound Interest After 1 Year."
+💎 Please join me in the new game called the "Power of Compound Interest After 1 Year".
 
 💎 The rule of game is that I always keep my balance and gain 2-2.5% profits per day or 30-40% in earnings per month.
 
