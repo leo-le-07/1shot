@@ -1,34 +1,41 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
+import NormalPost from '../components/normal-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import {getAllPosts} from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import {CMS_NAME} from '../lib/constants'
+import markdownToHtml from "../lib/markdownToHtml";
 
-export default function Index({ allPosts }) {
+export default function Index({allPosts}) {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>{CMS_NAME} - The Best Long-Term Provider Strategy</title>
         </Head>
         <Container>
-          <Intro />
+          <Intro/>
           {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
               date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
+              content={heroPost.content}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          <div>
+            {morePosts.map((post) => (
+              <NormalPost
+                title={post.title}
+                date={post.date}
+                content={post.content}
+              />
+            ))}
+          </div>
         </Container>
       </Layout>
     </>
@@ -43,9 +50,14 @@ export async function getStaticProps() {
     'author',
     'coverImage',
     'excerpt',
+    'content'
   ])
 
+  for (let i = 0; i < allPosts.length; i++) {
+    allPosts[i].content = await markdownToHtml(allPosts[i].content || '')
+  }
+
   return {
-    props: { allPosts },
+    props: {allPosts},
   }
 }

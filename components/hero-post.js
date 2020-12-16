@@ -1,37 +1,31 @@
-import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from '../components/cover-image'
-import Link from 'next/link'
+import PostBody from "./post-body";
 
 export default function HeroPost({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
-  slug,
+  content,
 }) {
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
+    <article className="mb-10">
+      <div className="flex">
+        <span className="rounded-full px-4 mr-2 bg-red-600 text-white p-2 rounded  leading-none flex items-center">HOT</span>
+        <h3 className="text-4xl md:text-4xl leading-tight">
+          {title}
+        </h3>
       </div>
-      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">{title}</a>
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <DateFormatter dateString={date} />
-          </div>
-        </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
-        </div>
+      <div>
+      <div className="mb-4 md:mb-0 text-gray-600">
+        Last updated: {' '}
+        <DateFormatter dateString={date} />
       </div>
-    </section>
+      </div>
+      <div className="mb-8 mt-8 md:mb-16">
+        <CoverImage title={title} src={coverImage} />
+      </div>
+      <PostBody content={content} />
+    </article>
   )
 }
