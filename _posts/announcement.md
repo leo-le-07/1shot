@@ -5,7 +5,7 @@ date: '2020-12-15T15:35:07.322Z'
 updatedAt: '2020-12-16T15:35:07.322Z'
 ---
 
-### Updated on 16 Dec 2020 - 11:00
+### Updated on 16 Dec 2020 - 11:00 UTC
 
 Next week, start on 21 Dec 2020, I'll change the minimum investment funds to **$150** instead of $100 as current. It's inevitable when my strategy provider supports more copiers, and the total copying capital is bigger.
 
