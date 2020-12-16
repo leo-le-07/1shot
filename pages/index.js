@@ -1,6 +1,7 @@
 import Container from '../components/container'
 import HeroPost from '../components/hero-post'
 import NormalPost from '../components/normal-post'
+import AnnouncementPost from '../components/announcement-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
 import {getAllPosts} from '../lib/api'
@@ -10,7 +11,8 @@ import markdownToHtml from "../lib/markdownToHtml";
 
 export default function Index({allPosts}) {
   const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const announcementPost = allPosts[1]
+  const morePosts = allPosts.slice(2)
   return (
     <>
       <Layout>
@@ -23,15 +25,20 @@ export default function Index({allPosts}) {
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
-              date={heroPost.date}
+              date={heroPost.updatedAt}
               content={heroPost.content}
             />
           )}
           <div>
+            <AnnouncementPost
+              title={announcementPost.title}
+              date={announcementPost.updatedAt}
+              content={announcementPost.content}
+            />
             {morePosts.map((post) => (
               <NormalPost
                 title={post.title}
-                date={post.date}
+                date={post.updatedAt}
                 content={post.content}
               />
             ))}
@@ -46,6 +53,7 @@ export async function getStaticProps() {
   const allPosts = getAllPosts([
     'title',
     'date',
+    'updatedAt',
     'slug',
     'author',
     'coverImage',

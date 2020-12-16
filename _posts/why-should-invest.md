@@ -2,6 +2,7 @@
 title: 'Why You Should Invest In This Provider Strategy'
 coverImage: '/assets/blog/why-should-invest/cover.jpg'
 date: '2020-11-30T05:35:07.322Z'
+updatedAt: '2020-11-30T05:35:07.322Z'
 ---
 
 ### 10 Years of Forex Trading Experience

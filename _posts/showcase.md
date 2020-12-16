@@ -2,6 +2,7 @@
 title: "Copiers' Profits Showcase"
 coverImage: '/assets/blog/showcase/cover.jpg'
 date: '2020-12-10T15:35:07.322Z'
+updatedAt: '2020-12-10T15:35:07.322Z'
 ---
 
 ![Profit Double](/assets/blog/showcase/r_double.png)

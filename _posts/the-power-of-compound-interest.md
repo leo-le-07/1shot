@@ -2,7 +2,8 @@
 title: 'The Power of Compound Interest'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/the-power-of-compound-interest/cover.png'
-date: '2020-12-15T10:35:07.322Z'
+date: '2020-12-16T10:35:07.322Z'
+updatedAt: '2020-12-15T10:35:07.322Z'
 author:
   name: JJ Kasper
   picture: '/assets/blog/authors/jj.jpeg'
