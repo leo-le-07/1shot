@@ -9,7 +9,7 @@ updatedAt: '2020-12-16T15:35:07.322Z'
 
 When patient trading pays off...
 
-Sometimes I have to open my orders over a day. However, the cTrader platform takes snapshot trading results every day that we can see a gap in my ROI chart. In the end, we still have a winning trade together. I always keep my eyes on our order. **All you need to do is relax and don't jump in and out of our trade to prevent unnecessary loss**.
+Sometimes I have to open my orders over a day. However, the cTrader platform takes snapshot trading results every day that we can see a gap in my ROI chart. In the end, we still have a winning trade together. I always keep my eyes on our order. **All you need to do is relax. Please don't jump in and out of our active trades to avoid unnecessary loss**.
 
 ![Order keeps overnight](/assets/blog/announcement/r_17_12_2020.png)
 
