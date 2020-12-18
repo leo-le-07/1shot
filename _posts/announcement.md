@@ -5,6 +5,14 @@ date: '2020-12-15T15:35:07.322Z'
 updatedAt: '2020-12-16T15:35:07.322Z'
 ---
 
+### Updated on 18 Dec 2020 - 8:00 UTC
+
+When patient trading pays off...
+
+Sometimes I have to open my orders over a day. However, the cTrader platform takes snapshot trading results every day that we can see a gap in my ROI chart. In the end, we still have a winning trade together. I always keep my eyes on our order. **All you need to do is relax and don't jump in and out of our trade to prevent unnecessary loss**.
+
+![Order keeps overnight](/assets/blog/announcement/r_17_12_2020.png)
+
 ### Updated on 16 Dec 2020 - 11:00 UTC
 
 Next week, start on 21 Dec 2020, I'll change the minimum investment funds to **$150** instead of $100 as current. It's inevitable when my strategy provider supports more copiers, and the total copying capital is bigger.
