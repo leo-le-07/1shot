@@ -2,7 +2,7 @@
 title: "Announcements"
 coverImage: '/assets/blog/showcase/cover.jpg'
 date: '2020-12-15T15:35:07.322Z'
-updatedAt: '2020-12-16T15:35:07.322Z'
+updatedAt: '2020-12-18T15:35:07.322Z'
 ---
 
 ### Updated on 18 Dec 2020 - 8:00 UTC
