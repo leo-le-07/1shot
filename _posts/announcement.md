@@ -13,6 +13,9 @@ Sometimes I have to open my orders over a day. However, the cTrader platform tak
 
 ![Order keeps overnight](/assets/blog/announcement/r_17_12_2020.png)
 
+P/s: We gain more than 7% profits in the end of day.
+![Profit 7%](/assets/blog/announcement/r_18_12_2020.png)
+
 ### Updated on 16 Dec 2020 - 11:00 UTC
 
 Next week, start on 21 Dec 2020, I'll change the minimum investment funds to **$150** instead of $100 as current. It's inevitable when my strategy provider supports more copiers, and the total copying capital is bigger.
